@@ -1,5 +1,5 @@
 # UnityTilemapMask
-The component that is mask. Works the same as SpriteMask, but used for tilemaps. 
+The mask component. Works the same as SpriteMask, but used for tilemaps. 
 
 ### How to use
 
