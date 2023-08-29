@@ -5,7 +5,7 @@ using UnityEngine.Tilemaps;
 
 public class TilemapMask : MonoBehaviour
 {
-    //-- Made by @JustAnCore
+    //-- Made by @CalmlyGrass
     //-- License: Apache 2.0
 
     public GameObject maskCell;
