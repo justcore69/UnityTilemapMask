@@ -1,12 +1,13 @@
 # UnityTilemapMask
-The mask component. Works the same as SpriteMask, but used for tilemaps. 
+The mask component. Works the same as SpriteMask, but used for tilemaps. Very easy to use!
 
 ### How to use
 
 1. Download the TilemapMask folder
 2. Apply the `TilemapMask.cs` script to an object that the Tilemap is on and set the `Mask Cell` field to the `FloorMask.prefab`.
+3. Set the Mask Interaction to "Visible Inside Mask" inside all SpriteRenderers of your sprites, which should only appear inside the mask.
+4. See the result! :)
 
-Also don't forget to set the Mask Interaction to "Visible Inside Mask" inside all SpriteRenderers of your sprites, which should only appear inside the mask.
 
 ![alt text](https://github.com/JustAnCore/UnityTilemapMask/blob/main/scr.png?raw=true)
 
