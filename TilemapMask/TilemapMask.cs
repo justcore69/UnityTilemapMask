@@ -5,12 +5,12 @@ using UnityEngine.Tilemaps;
 
 public class TilemapMask : MonoBehaviour
 {
-    //-- Made by @CalmlyGrass
-    //-- License: Apache 2.0
+    //-- UnityTilemapMask - Open source repo hosted on github
+    //-- License: MIT
 
     public GameObject maskCell;
-
-    private GameObject maskParentObj;
+    [HideInInspector]
+    public GameObject maskParentObj; // Must be public for correct handling of game/editor destroying
 
     public void GenerateMask()
     {
@@ -19,7 +19,15 @@ public class TilemapMask : MonoBehaviour
         Vector3Int startCoord = tilemap.origin;
         Vector3Int size = tilemap.size;
 
-        if (maskParentObj != null) DestroyImmediate(maskParentObj);
+        if (maskParentObj != null)
+        {
+            if (Application.isEditor)
+            {
+                DestroyImmediate(maskParentObj);
+                maskParentObj = null;
+            }
+            else Destroy(maskParentObj);
+        }
 
         maskParentObj = new GameObject("TilemapMask");
         maskParentObj.transform.parent = transform;
@@ -41,3 +49,4 @@ public class TilemapMask : MonoBehaviour
         }
     }
 }
+
