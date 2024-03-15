@@ -19,6 +19,7 @@ public class TilemapMask : MonoBehaviour
         Vector3Int startCoord = tilemap.origin;
         Vector3Int size = tilemap.size;
 
+        // Destroy old mask if needed
         if (maskParentObj != null)
         {
             if (Application.isEditor)
