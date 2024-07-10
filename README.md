@@ -13,5 +13,5 @@ The mask component. Works the same as SpriteMask, but used for tilemaps. Very ea
 
 Ask any questions you want in the issues section. I'm still supporting this repo!
 
-Also you can give me a star if you'd like to <3
+Also you could give me a star if you'd like to <3
 
